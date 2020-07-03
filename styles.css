@@ -1,0 +1,78 @@
+div:not(.no-neo),
+input,
+button {
+  border-radius: 50px;
+  background: #e6e6e6;
+  box-shadow: 20px 20px 30px #c4c4c4, -20px -20px 30px #ffffff;
+}
+
+input,
+button {
+  border: 0;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+#app-wrap,
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  font-family: "Quicksand", sans-serif !important;
+  user-select: none;
+}
+
+#app {
+  width: 80%;
+  min-height: 80%;
+  margin-left: 5%;
+  margin-top: 2.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+}
+
+#app input,
+button,
+select {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 20px 10px 20px 5px;
+}
+
+#highest-marks-wrap {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#highest-marks-wrap input {
+  width: 4em;
+}
+
+#calculate {
+  margin-top: 5%;
+  padding: 20px 10px 20px 5px;
+  font-size: 2rem;
+}
+
+#calculate:active {
+  box-shadow: -10px -10px 60px #c4c4c4, 10px 10px 60px #ffffff;
+}
+
+#subject {
+  border: #555 !important;
+  font-size: 1em;
+  padding: 10px 10px 10px 5px;
+}

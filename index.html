@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICSE Board Marks Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app-wrap" class="no-neo">
+      <div id="app">
+        <h1 style="text-align: center;">ICSE Board Marks calculator (based on the formula devised by ICSE)</h1>
+        <p style="text-align: center;">
+          <div style="width: fit-content;">
+            <select id="subject">
+              <option value="">--Please choose a subject--</option>
+              <option value="bio">Biology</option>
+              <option value="geo">Geography</option>
+              <option value="hin">Hindi</option>
+              <option value="com">Computer/Commercial Applications</option>
+            </select>
+          </div>
+        </p>
+        <h2>
+          From the attented subject papers, enter any three subject marks that are highest from all others (out of 80/ out of 100 for Computer/Commerce)
+        </h2>
+        <div id="highest-marks-wrap" class="no-neo">
+          <input type="text" class="highest-marks-1" placeholder="Marks" />
+          <input type="text" class="highest-marks-2" placeholder="Marks" />
+          <input type="text" class="highest-marks-3" placeholder="Marks" />
+        </div>
+        <h2>
+          Enter the marks you will get in the internal assessment of the subject
+          (out of 20/ out of 100 for Computer/Commerce)
+        </h2>
+        <input type="text" class="internal-marks" placeholder="Marks" />
+        <br />
+        <p style="text-align: center;">
+          <button id="calculate">Calculate</button>
+        </p>
+        <br />
+        <h2>
+          According to the formula, you will get
+          <span class="final-marks"></span> marks
+        </h2>
+      </div>
+      <p style="text-align: center;">Made by <a href="//github.com/obnoxiousnerd">Pranav Karawale</a></p>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
